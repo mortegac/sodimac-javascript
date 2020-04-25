@@ -1,0 +1,31 @@
+
+
+
+
+Explicacion del uso de arrow function
+
+const nombrefuncion = (parametros) => {
+
+
+    if(parametros === 'cafe negro' ){
+       
+          -->  cafe negro sigue esto pasos
+    }
+ 
+    if(parametros === 'cafe verde' ){
+       
+          -->  cafe verde sigue esto pasos
+    }
+
+
+    if(parametros === 'cafe instantaneo' ){
+       
+          -->  cafe instantaneo sigue esto pasos
+    }
+
+}
+
+
+nombrefuncion('cafe negro')
+nombrefuncion('cafe verde')
+nombrefuncion('cafe instantaneo')

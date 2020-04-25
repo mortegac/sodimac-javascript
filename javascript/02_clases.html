@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+</head>
+<style>
+    body {
+           text-align: center;
+           margin: 10px;
+           padding: 100px;
+           border: 1px dashed;
+   }
+   h2{ color: gray;}
+   span{
+       color:red;
+   }
+</style>
+
+<body>
+
+    <h2>Utilización de clases</h2>
+    <h1 id="contenido"></h1>
+
+</body>
+
+<script>
+
+// Clase calculadora 
+
+class Calculadora{
+
+    // Inicialiando los valores de la clase
+    constructor(){
+        this._valor_a = 0;
+        this._valor_b = 0;
+    }
+
+    // Métodos
+    setValor(valor_a, valor_b){
+        this._valor_a = valor_a;
+        this._valor_b = valor_b;
+
+        console.log('<this._valor_a> : ', this._valor_a)
+        console.log('<this._valor_b> : ', this._valor_b)
+    }
+
+    getValor_a(){
+        return this._valor_a;
+    }
+    getValor_b(){
+        return this._valor_b;
+    }
+    
+}
+
+
+// ESTOY FUERA DEL AMBITO DE LA CLASE
+
+const CALCULADORA_CLASE = new Calculadora(); 
+
+CALCULADORA_CLASE.setValor(1,5)
+
+console.log('<getValor_a>', CALCULADORA_CLASE.getValor_a())
+console.log('<getValor_b>', CALCULADORA_CLASE.getValor_b())
+
+let contenido = document.getElementById("contenido")
+
+// contenido.innerHTML= 'UTILIZANDO LA CLASE' + ': CALCULADORA'
+// Template string
+contenido.innerHTML= `UTILIZANDO LA CLASE CALCULADORA
+                     <br /><br />
+                     A = ${CALCULADORA_CLASE.getValor_a()}   
+                     <br />
+                     B = ${CALCULADORA_CLASE.getValor_b()}   
+                    `
+
+
+
+
+
+</script>
+
+</html>
