@@ -1,6 +1,18 @@
 
 
 let numbers = [1,2,3,4,5,6];
+
+// const indice = numbers.indexOf(4)
+// numbers[indice] = 8
+
+// Diferencia entre arreglo y Objetos
+// let objeto = [
+//     { numero : 1 },
+//     { numero : 2 },
+//     { numero : 3 },
+//     { numero : 4 }
+//     ]
+
 let texto = "soy un texto";
 
 console.log(numbers)

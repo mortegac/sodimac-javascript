@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura condicionales</title>
+</head>
+<body>
+
+<h2>Ejemplo: IF/ELSE</h2>
+<h1 id="if"></h1>
+
+<script>
+    let textIf = document.getElementById("if");
+
+    let condicion1 = true;
+    let condicion2 = 5
+
+    if( condicion1 && condicion2 < 3 ){
+
+        const cualquircosa = 1;
+
+        textIf.innerHTML="VERDADERO";
+
+    }else{
+
+        textIf.innerHTML="FALSO";
+
+    } 
+
+
+
+    let y = 10
+    let x = y
+
+    x = x + y
+    // x += y
+    console.log(`
+        y = ${y}
+        x = ${x}
+        
+    `) 
+
+
+// DESTRUCTURACION
+
+let foo = ['uno','dos','tres'];
+
+// sin destructuración
+let uno  = foo[0];
+let dos  = foo[1];
+let tres = foo[2];
+
+
+let obj = {
+    uno : 1,
+    dos : 1,
+    tres : 1,
+}
+
+// con destructuración
+let { tres } = foo;
+
+
+var uno
+var dos
+var tres
+
+
+
+
+
+
+
+
+    // SINTAXIS IF/ELSE
+    // if(condicion){
+    //        ...bloque de código a ejecutar cuando se a VERDADERO 
+    
+    // }else{
+    //     ...bloque de código a ejecutar cuando se a FALSE
+    // }
+</script>
+
+
+<!-- 
+<h2>Ejemplo: WHILE</h2>
+<h1 id="while"></h1>
+<script>
+    let textWhile = document.getElementById("while")
+
+let contador = 0
+
+while(contador < 5){
+
+
+    console.log(`contador =  ${contador}`);
+
+    //  contador = contador + 1;
+    contador++;
+    
+
+}
+
+console.log(`El loop finalizo en ${contador}`);
+
+
+// SINTAXIS
+// while(condicion){
+//     ... Bloque de codigo que se repita hasta que la condicion cambie
+// }
+
+</script> -->
+    
+
+<!-- 
+<h2>Ejemplo: Switch</h2>
+<h1 id="textSwitch"></h1>
+
+<script>
+    let textoFruit = document.getElementById("textSwitch");
+    let texto = '';
+
+    let tipoFruta = 'Sandia';
+
+    switch(tipoFruta){
+
+        case "Narajas":
+            texto= "Naranjas cuestan 1.000 kilo";
+            break;
+
+        case "Manzanas":
+            texto= "Manzanas cuestan 600 kilo";
+            break;
+
+        case "Platanos":
+            texto= "Platanos cuestan 1.200 kilo";
+            break;
+
+        case "Mango":
+            texto= "Mango cuestan 2.000 la unidad";
+            break;
+
+        default:
+            texto= `Disculpa, no tengo la fruta ${tipoFruta}`;
+    }
+
+    textoFruit.innerHTML = texto;
+
+
+    // SINTAXIS
+    // switch(condicion){
+
+    //     case caso_1: bloque_codigo
+    //     case caso_2: bloque_codigo
+    //     case caso_3: bloque_codigo
+    //     default: bloque_codigo_por_defecto
+    // } 
+    
+</script>
+-->
+<!-- 
+
+<h2>Ejemplo: FOR</h2>
+<ul id="lista"></ul>
+
+<script>
+    let textoLista = document.getElementById("lista");
+
+    let fruits = [
+        "Manzanas",
+        "Naranjas",
+        "Uvas",
+        "Sandias",
+        "Melones",
+        "Kiwi",
+        "Mangos",
+    ];
+
+    let listaHtml = '';
+
+    for( let indice = 0; indice < fruits.length; indice++) {
+
+        listaHtml = `${listaHtml} <li>${fruits[indice]}</li>`;
+    }
+
+    textoLista.innerHTML= listaHtml;
+    console.log(listaHtml);
+
+
+
+
+ 
+
+
+
+// SINTAXIS
+// for (  condicion; condicion; condicion;){
+//     ... Bloque código
+// }
+
+</script>
+
+-->
+</body>
+</html>

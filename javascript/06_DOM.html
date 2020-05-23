@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        .clase{
+            display: block;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 name="titulo" style='color:pink'>DOM</h1>
+    <span>Manipulando el DOM</span>
+
+    <div id="prueba">
+        <span id="id5" class="clase" title="Azul">uno</span>
+        <span id="id4" class="clase" title="Verde">dos</span>
+        <span id="id3" class="clase" title="Naranja">tres</span>
+        <span id="id2" class="clase" title="Lila">cuatro</span>
+        <span id="id1" class="clase" title="Rojo">cinco</span>
+    </div>
+
+</body>
+<script>
+// getElementsByTagName
+let name = document.getElementsByTagName("span");
+console.log('--tagName--',name)
+
+// getElementById
+let id = document.getElementById("id2");
+console.log('--id--',id)
+
+// getElementsByClassName 
+let clase = document.getElementsByClassName("clase");
+console.log('--clase--', clase);
+
+// querySelector
+let selector = document.querySelector('#prueba .clase');
+console.log('-selector-', selector)
+
+// querySelectorAll
+let selectorAll = document.querySelectorAll('span');
+console.log('--selectorAll--', selectorAll);
+
+
+</script>
+
+
+
+
+
+</html>
