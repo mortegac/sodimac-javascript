@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" 
+        rel="stylesheet" >
+    <link
+        href="./07-formulario.css"
+        rel="stylesheet">
+</head>
+<body>
+    
+    <div id="form">
+        <div class="form-card">
+
+            <div class="card-title">
+                <h3 class="title is-3 is-center">Ingreso de usario</h3>
+            </div>
+
+            <div class="content">
+                <form id="frm" method="POST" action="#">
+                    <input id="name" type="text" name="name" placeholder="Nombre" required>
+                    <input id="email" type="email" name="email" placeholder="Email">
+                    
+                    <span id="notification"></span>
+                    <button type="submit" class="btn btn-primary">Crear usuario</button>
+
+
+                </form>
+
+                <h5 class="title is-3">Listado de Usuarios</h5>
+                <ul id="list">                    
+                    <!-- <li>uno</li><li>uno</li><li>uno</li> -->
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div?>
+
+</body>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="./07-formulario.js"></script>
+</html>
