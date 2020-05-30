@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-sodimac",
+  "version": "1.0.0",
+  "description": "Ejemplos de nodejs para el curso de Fullstack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortegac/sodimac-javascript.git"
+  },
+  "keywords": [
+    "nodejs",
+    "fullstack",
+    "api"
+  ],
+  "author": "Manuel Ortega Carcamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mortegac/sodimac-javascript/issues"
+  },
+  "homepage": "https://github.com/mortegac/sodimac-javascript#readme",
+  "dependencies": {
+    "moment": "^2.26.0"
+  }
+}
