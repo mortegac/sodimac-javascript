@@ -14,6 +14,6 @@ fs.readFile( pathFile, ENCODING, (error, data) =>{
         process.exit(1);
 
     }else{
-        console.table('Datos:', [data]);
+        console.log('Datos:', data);
     }
 });
